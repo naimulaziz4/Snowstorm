@@ -10,13 +10,13 @@ terraform {
     organization = "Gravalanche"
 
     workspaces {
-      name = "inventory-traces"
+      name = "supplier-relationships"
     }
   }
 }
 
 provider "snowflake" {
-  username = "naimulaziz82"
+  username = "naimulaziz4"
   account  = "LYB03277"
   region   = "us-east-1"
 
