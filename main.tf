@@ -5,11 +5,22 @@ terraform {
       version = "~> 0.35"
     }
   }
+
+  cloud {
+    organization = "Gravalanche"
+
+    workspaces {
+      name = "inventory-traces"
+    }
+  }
 }
 
 provider "snowflake" {
-  role   = "SYSADMIN"
+  username = "naimulaziz82"
+  account = "LYB03277"
   region = "us-east-1"
+
+  role   = "SYSADMIN"
 }
 
 resource "snowflake_database" "inventory_db" {
