@@ -17,10 +17,10 @@ terraform {
 
 provider "snowflake" {
   username = "naimulaziz82"
-  account = "LYB03277"
-  region = "us-east-1"
+  account  = "LYB03277"
+  region   = "us-east-1"
 
-  role   = "SYSADMIN"
+  role = "SYSADMIN"
 }
 
 resource "snowflake_database" "inventory_db" {
